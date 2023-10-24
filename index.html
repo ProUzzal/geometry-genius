@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geometry-Genius</title>
+    <script src="https://kit.fontawesome.com/de75372ec2.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+
+    <nav class="flex bg-blue-200 w-full justify-between items-center p-10">
+        <div class="logo ">
+            <h2 class="text-4xl text-rose-700 font-bold">Interactive</h2>
+            <p>Geometry-Genius</p>
+        </div>
+        <div class="">
+            <h2 class="bg-blue-700 p-2 rounded text-white hover:bg-blue-400 hover:text-black px-5">Blog</h2>
+        </div>
+
+    </nav>
+
+
+
+
+    <section class="geometry">
+
+
+
+        <!-- at first mobile first design -->
+        <!-- -----------------triangle--------------------------  -->
+        <div class="shape-area grid grid-cols-4 grid-rows-3 gap-5 ">
+
+            <div  class="rounded grid place-content-center p-5 text-center border-2 border-gray-300">
+
+                <img class="mx-auto w-72 h-48" src="/images/triangle.png" alt="">
+                <h2 class="text-2xl font-bold">Triangle</h2>
+                <p class="text-xl" id="inputed-value"><span>b=23cm</span><span>h=4cm</span><i
+                        class="fa-solid fa-pen-to-square"></i></p>
+                <form action="" class="text-center">
+                    <input class="inline w-1/4 rounded bg-gray-200 p-2" type="text" form="triangle" placeholder="b">
+                    <label class="text-lg inline" for="triangle">cm</label>
+                    <input class="inline w-1/4 rounded m-3 bg-gray-200 p-2 my-2" type="text" form="triangle"
+                        placeholder="h">
+                    <label class="text-lg inline" for="triangle">cm</label> <button><i
+                            class="fa-solid fa-square-check text-3xl text-blue-500"></i></button>
+                    <input id="triangle" type="submit" class="bg-blue-700 text-white rounded hover:bg-blue-400 p-3 w-full"
+                        value="Calculate">
+                </form>
+            </div>
+
+            <!-- -----------------------------------------rectangle------------------------- -->
+            <div class="rounded grid place-content-center p-5 text-center border-2 border-gray-300">
+                <img class="mx-auto w-72 h-48" src="/images/rectangle.png" alt="">
+                <h2 class="text-2xl font-bold">Rectangle</h2>
+                <p class="text-xl" id="inputed-value"><span>b=23cm</span><span>h=4cm</span><i
+                        class="fa-solid fa-pen-to-square"></i></p>
+                <form action="" class="text-center">
+                    <input class="inline w-1/4 rounded bg-gray-200 p-2" type="text" form="triangle" placeholder="w">
+                    <label class="text-lg inline" for="triangle">cm</label>
+                    <input class="inline w-1/4 rounded m-3 bg-gray-200 p-2 my-2" type="text" form="triangle"
+                        placeholder="l">
+                    <label class="text-lg inline" for="triangle">cm</label> <button><i
+                            class="fa-solid fa-square-check text-3xl text-blue-500"></i></button>
+                    <input type="submit" id="rectangle" class="bg-blue-700 text-white rounded hover:bg-blue-400 p-3 w-full"
+                        value="Calculate">
+                </form>
+            </div>
+
+            <!-- ---------------------------------------------------------paralleogram------------------------ -->
+
+            <div class="rounded grid place-content-center p-5 text-center border-2 border-gray-300">
+                <img class="mx-auto w-72 h-48" src="/images/parallelogram.png" alt="">
+                <h2 class="text-2xl font-bold">Paralleogram</h2>
+                <p class="text-xl" id="inputed-value"><span>b=23cm</span><span>h=4cm</span><i
+                        class="fa-solid fa-pen-to-square"></i></p>
+                <form action="" class="text-center">
+                    <input class="inline w-1/4 rounded bg-gray-200 p-2" type="text" form="triangle" placeholder="b">
+                    <label class="text-lg inline" for="triangle">cm</label>
+                    <input class="inline w-1/4 rounded m-3 bg-gray-200 p-2 my-2" type="text" form="triangle"
+                        placeholder="h">
+                    <label class="text-lg inline" for="triangle">cm</label> <button><i
+                            class="fa-solid fa-square-check text-3xl text-blue-500"></i></button>
+                    <input type="submit" id="parallelogram" class="bg-blue-700 text-white rounded hover:bg-blue-400 p-3 w-full"
+                        value="Calculate">
+                </form>
+            </div>
+            <!-- -------------------------------Rhombus----------------------------------------- -->
+            <div  class="rounded grid place-content-center p-5 text-center border-2 border-gray-300">
+                <img class="mx-auto w-72 h-48" src="/images/rhombus.png" alt="">
+                <h2 class="text-2xl font-bold">Rhombus</h2>
+                <p class="text-xl" id="inputed-value"><span>b=23cm</span><span>h=4cm</span><i
+                        class="fa-solid fa-pen-to-square"></i></p>
+                <form action="" class="text-center">
+                    <input class="inline w-1/4 rounded bg-gray-200 p-2" type="text" form="triangle" placeholder="b1">
+                    <label class="text-lg inline" for="triangle">cm</label>
+                    <input class="inline w-1/4 rounded m-3 bg-gray-200 p-2 my-2" type="text" form="triangle"
+                        placeholder="d2">
+                    <label class="text-lg inline" for="triangle">cm</label> <button><i
+                            class="fa-solid fa-square-check text-3xl text-blue-500"></i></button>
+                    <input type="submit" id="rhombus" class="bg-blue-700 text-white rounded hover:bg-blue-400 p-3 w-full"
+                        value="Calculate">
+                </form>
+            </div>
+            <!-- ----------------------------------------------Pentagon-------------------------------------- -->
+            <div class="rounded grid place-content-center p-5 text-center border-2 border-gray-300">
+                <img class="mx-auto w-72 h-48" src="/images/pentagon.png" alt="">
+                <h2 class="text-2xl font-bold">Pentagon</h2>
+                <p class="text-xl" id="inputed-value"><span>b=23cm</span><span>h=4cm</span><i
+                        class="fa-solid fa-pen-to-square"></i></p>
+                <form action="" class="text-center">
+                    <input class="inline w-1/4 rounded bg-gray-200 p-2" type="text" form="triangle" placeholder="p">
+                    <label class="text-lg inline" for="triangle">cm</label>
+                    <input class="inline w-1/4 rounded m-3 bg-gray-200 p-2 my-2" type="text" form="triangle"
+                        placeholder="a">
+                    <label class="text-lg inline" for="triangle">cm</label> <button><i
+                            class="fa-solid fa-square-check text-3xl text-blue-500"></i></button>
+                    <input type="submit" id="pentagon" class="bg-blue-700 text-white rounded hover:bg-blue-400 p-3 w-full"
+                        value="Calculate">
+                </form>
+            </div>
+            <!-- --------------------------------------------Ellipse------------------------------------- -->
+
+            <div class="rounded grid place-content-center p-5 text-center border-2 border-gray-300">
+                <img class="mx-auto w-72 h-48" src="/images/ellipse.png" alt="">
+                <h2 class="text-2xl font-bold">Ellipse</h2>
+                <p class="text-xl" id="inputed-value"><span>b=23cm</span><span>h=4cm</span><i
+                        class="fa-solid fa-pen-to-square"></i></p>
+                <form action="" class="text-center">
+                    <input class="inline w-1/4 rounded bg-gray-200 p-2" type="text" form="triangle" placeholder="a">
+                    <label class="text-lg inline" for="triangle">cm</label>
+                    <input class="inline w-1/4 rounded m-3 bg-gray-200 p-2 my-2" type="text" form="triangle"
+                        placeholder="b">
+                    <label class="text-lg inline" for="triangle">cm</label> <button><i
+                            class="fa-solid fa-square-check text-3xl text-blue-500"></i></button>
+                    <input type="submit" id="ellipse" class="bg-blue-700 text-white rounded hover:bg-blue-400 p-3 w-full"
+                        value="Calculate">
+                </form>
+            </div>
+            <!-- --------------------------------------------Calculation Area------------------------------------- -->
+
+            <div id="" class="rounded p-10 border-2 border-gray-300">
+
+                <h2 class="underline font-bold text-3xl">Area of Calculation</h2>
+                <ol class="list-decimal" id="calculaiton-area-parent">
+
+                    <li>One <span class="p-1 text-white bg-blue-700 rounded hover:bg-blue-200 hover:text-black">Convert
+                            to M2</span>
+                    </li>
+                    <li>One</li>
+                    <li>One</li>
+                    <li>One</li>
+                </ol>
+
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+    </section>
+
+    <script src="geometry.js"></script>
+</body>
+
+</html>
